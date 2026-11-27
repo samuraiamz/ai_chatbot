@@ -77,13 +77,13 @@ if question:
 
             try:
 
-               # Retrieve conversation history before the current question
-chat_history = st.session_state.messages[:-1]
+                # Retrieve conversation history before the current question
+                chat_history = st.session_state.messages[:-1]
 
-answer, sources = ask_chatbot(
-    question,
-    chat_history=chat_history
-)
+                answer, sources = ask_chatbot(
+                    question,
+                    chat_history=chat_history
+                )
 
                 st.markdown(answer)
 
